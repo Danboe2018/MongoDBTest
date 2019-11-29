@@ -1,0 +1,37 @@
+{
+  "name": "MongoDBTest",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@expo/samples": "~3.0.0",
+    "@expo/vector-icons": "^9.0.0",
+    "expo": "^33.0.0",
+    "expo-asset": "^5.0.1",
+    "expo-constants": "~5.0.1",
+    "expo-font": "~5.0.1",
+    "expo-web-browser": "^5.0.0",
+    "moment": "^2.24.0",
+    "mongodb-stitch-react-native-sdk": "^4.4.0",
+    "react": "16.8.3",
+    "react-dom": "^16.8.6",
+    "react-native": "^0.61.4",
+    "react-native-confetti": "^0.1.0",
+    "react-native-swipeout": "^2.3.6",
+    "react-native-web": "^0.11.4",
+    "react-navigation": "^3.11.0"
+  },
+  "devDependencies": {
+    "babel-preset-expo": "^5.1.0",
+    "jest-expo": "^33.0.0"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}

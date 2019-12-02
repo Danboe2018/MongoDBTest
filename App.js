@@ -51,9 +51,9 @@ export default class App extends React.Component {
 
     return (
       <View style={styles.container}>
-        <Text> {loginStatus} </Text>
+        <Text>{loginStatus}</Text>
         {this.state.currentUserId !== undefined ? logoutButton : loginButton}
-        {this.state.name !== undefined ? <Text>{this.state.welcomeText}</Text> : this.state.currentUserId !== undefined ? nameInput : ""}
+        {/* {this.state.name !== undefined ? <Text>{this.state.welcomeText}</Text> : this.state.currentUserId !== undefined ? nameInput : ""} */}
         {(this.state.name == undefined) && (this.state.tempName !== undefined) ? confirmNameButton : "" }
       </View>
     );

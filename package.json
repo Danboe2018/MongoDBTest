@@ -1,5 +1,5 @@
 {
-  "name": "empty-project-template",
+  "name": "MongoDBTest",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -10,14 +10,14 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "metro-react-native-babel-preset": "0.54.1",
-    "mongodb-stitch-react-native-core": "^4.0.14-5",
-    "mongodb-stitch-react-native-sdk": "^4.0.14-5",
-    "mongodb-stitch-react-native-services-aws": "^4.0.14-5",
-    "mongodb-stitch-react-native-services-http": "^4.0.14-5",
-    "mongodb-stitch-react-native-services-mongodb-remote": "^4.0.14-5",
-    "mongodb-stitch-react-native-services-twilio": "^4.0.14-5",
-    "react": "16.3.1",
-    "react-native": "^0.60.1"
+    "metro-react-native-babel-preset": "0.57.0",
+    "mongodb-stitch-react-native-core": "4.7.1",
+    "mongodb-stitch-react-native-sdk": "4.7.1",
+    "mongodb-stitch-react-native-services-aws": "4.7.1",
+    "mongodb-stitch-react-native-services-http": "4.7.1",
+    "mongodb-stitch-react-native-services-mongodb-remote": "4.7.1",
+    "mongodb-stitch-react-native-services-twilio": "4.7.1",
+    "react": "16.12.0",
+    "react-native": "0.61.5"
   }
 }

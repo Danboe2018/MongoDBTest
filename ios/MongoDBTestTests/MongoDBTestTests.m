@@ -14,11 +14,11 @@
 #define TIMEOUT_SECONDS 600
 #define TEXT_TO_LOOK_FOR @"Welcome to React"
 
-@interface emptyAppTests : XCTestCase
+@interface MongoDBTestTests : XCTestCase
 
 @end
 
-@implementation emptyAppTests
+@implementation MongoDBTestTests
 
 - (BOOL)findSubviewInView:(UIView *)view matching:(BOOL(^)(UIView *view))test
 {

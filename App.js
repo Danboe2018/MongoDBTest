@@ -53,18 +53,19 @@ export default class App extends React.Component {
       <View style={styles.container}>
         <Text>{loginStatus}</Text>
         {this.state.currentUserId !== undefined ? logoutButton : loginButton}
-        {/* {this.state.name !== undefined ? <Text>{this.state.welcomeText}</Text> : this.state.currentUserId !== undefined ? nameInput : ""} */}
-        {(this.state.name == undefined) && (this.state.tempName !== undefined) ? confirmNameButton : "" }
+        <Text>{this.state.welcomeText}</Text>
+        {nameInput}
+        {confirmNameButton}
       </View>
     );
   }
 
   _loadClient() {
-    Stitch.initializeDefaultAppClient('taskmanage-rmito').then(client => {
+    Stitch.initializeDefaultAppClient('taskmanage-tnjfu').then(client => {
       this.setState({ client });
-      const dbClient = client.getServiceClient(MongoDB.RemoteMongoClient.factory, "mongodb-atlas");
+      const dbClient = client.getServiceClient(MongoDB.RemoteMongoClient.factory, "MongoDB-Atlas");
       this.setState({atlasClient : dbClient});
-      this.setState({db : dbClient.db("greetings")});
+      this.setState({db : dbClient.db("TestData")});
       if(client.auth.isLoggedIn) {
         this.setState({ currentUserId: client.auth.user.id })
       }
@@ -97,7 +98,7 @@ export default class App extends React.Component {
 
   _onPressName() {
       this.setState({ name: this.state.tempName });
-      const collection = this.state.db.collection("names");
+      const collection = this.state.db.collection("TestCollection");
       collection.find({owner_id: this.state.currentUserId}, {limit: 1}).first().then(foundDoc => {
         if (foundDoc) {
           collection.updateOne(
